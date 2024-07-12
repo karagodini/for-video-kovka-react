@@ -1,0 +1,211 @@
+.firstBlock {
+    width: 100vw;
+    height: 600px;
+    background-image: url("/src/images/gates/159.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.styleForInput {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.styleForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.styleForInput:focus {
+    background-color: #f8d679;
+}
+
+.buttonSubmit {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: var(--mainColor);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.secondBlock {
+    width: 100vw;
+    height: 600px;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: wheat;
+    color: rgb(93, 18, 18);
+}
+
+.namehowwork {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.fillForm {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.getConsultation {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.points {
+    width: 800px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.stages {
+    display: flex;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(235, 196, 124);
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+}
+
+.square:not(:last-child) {
+    border-right: 0px;
+    margin-right: 10px;
+}
+
+.name {
+    color: var(--textColor);
+}
+
+.goCatalog {
+    width: 200px;
+    height: 50px;
+    background-color: var(--mainColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.goCatalog:hover {
+    cursor: pointer;
+    background-color: var(--buttonHover);
+}
+
+.goCatalog:active {
+    background-color: var(--buttonClicked);
+}
+
+.link {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--textColor);
+
+}
+
+@media (max-width: 1140px) {
+    .secondBlock {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .blockForm,
+    .howWork {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blockForm {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    .square {
+        width: 200px;
+    }
+
+    .points {
+        width: 500px;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 680px) {
+    .stages {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .square {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .secondBlock {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 530px) {
+    .points {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .styleForInput {
+        width: 80vw;
+    }
+}

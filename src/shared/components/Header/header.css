@@ -1,0 +1,246 @@
+* {
+    font-family: Palatino;
+    margin: 0;
+    padding: 0;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftMenuPhone2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+    z-index: 9999;
+    top: 90px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.mainContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+    background-color: var(--mainColor);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.location {
+    display: none;
+}
+
+.leftMenuPhone {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    z-index: 9999;
+    top: 90px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.menu-open {
+    overflow: hidden;
+}
+
+.colorMenuItems {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.headerCenter {
+    width: calc(95%);
+    height: 90px;
+    background-color: var(--mainColor);
+    margin: 0 auto;
+}
+
+.telephone {
+    display: none;
+    right: 0;
+}
+
+.menu {
+    display: none;
+}
+
+.imgAndLogo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.burgerimg {
+    display: none;
+}
+
+.burgerimg:hover {
+    cursor: pointer;
+}
+
+.burgerimg:active {
+    background-color: rgb(78, 76, 76);
+}
+
+.burgerLogoTelephone {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.siteName {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.menu {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+@media (max-width: 1024px) {
+    .siteName {
+        font-weight: 100;
+        font-size: 24px;
+    }
+
+    .menu {
+        font-weight: 50;
+        font-size: 23px;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+/* ul li {
+  font-weight: 200;
+  width: auto;
+} */
+
+.listMenu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.item {
+    margin-right: 20px;
+}
+
+.item h2 {
+    white-space: nowrap;
+}
+
+/*
+ul li:not(:last-child) {
+  margin-right: 1vw;
+} */
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    /* .burgerLogoTelephone {
+      width: 0;
+    } */
+    ul {
+        display: none;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+    }
+
+    .listMenu {
+        display: none;
+    }
+
+    .burgerimg {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    /* .logo {
+      justify-content: flex-start;
+    } */
+    .telephone {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        /* right: 0; */
+    }
+
+    .siteName {
+        display: none;
+    }
+
+    /* h1 {
+      display: none;
+    } */
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 1300px) {
+    .headerCenter {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .telephone {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .location {
+        display: none;
+    }
+}
